@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app {
+  width: 360px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  color: #1abc9c;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.score-label {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.score-value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.scrambled-word {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 16px 0;
+  color: #2c3e50;
+}
+
+.message {
+  min-height: 20px;
+  color: #555;
+}
+
+.message-correct {
+  color: #27ae60;
+}
+
+.guess-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.guess-input:focus {
+  outline: none;
+  border-color: #1abc9c;
+}
+
+.pass-button,
+.restart-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+}
+
+.pass-button:hover:not(:disabled),
+.restart-button:hover {
+  background-color: #ddd;
+}
+
+.pass-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.restart-button {
+  background-color: #1abc9c;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.restart-button:hover {
+  background-color: #16a085;
+}
+
+.panel {
+  padding: 16px 0;
+}
